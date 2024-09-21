@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validations</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1>Assignment3</h1>
+
+    <form onsubmit="formValidation()">
+        <label>Student Name</label>
+        <span class="error" id="errorStudentName"></span>
+        <input id="inputStudentName" type="text" required>
+
+        <label>Email</label>
+        <input id="inputEmail" type="email" required>
+
+        <label>Age</label>
+        <span class="error" id="errorAge"></span>
+        <input id="inputAge" type="number" min="16" max="60" required>
+
+        <label>Course Selection</label>
+        <span class="error" id="errorCourseSelection"></span>
+
+        <label for="course">course</label>
+        <select name="course" id="course">
+            <option value="Programming">Programming</option>
+            <option value="Database Management">Database Management</option>
+            <option value="Chemistry">Chemistry</option>
+            <option value="Math">Math</option>
+        </select>
+
+
+        <button>Submit</button>
+    </form>
+
+    <p id="formOutPut"></p>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
